@@ -49,7 +49,7 @@ const Header = () => {
         </div>
         <ul
           className={cn(
-            "absolute w-full bg-background left-0 top-16 flex flex-col gap-4 text-sm px-4 pb-4 transition-all ease-in duration-300 md:px-10 lg:flex-row lg:static lg:opacity-100 lg:pb-0 lg:w-auto lg:items-center lg:gap-6 lg:px-0",
+            "absolute z-10 w-full bg-background left-0 top-16 flex flex-col gap-4 text-sm px-4 pb-4 transition-all ease-in duration-300 md:px-10 lg:flex-row lg:static lg:opacity-100 lg:pb-0 lg:w-auto lg:items-center lg:gap-6 lg:px-0",
             isMenuOpen ? "opacity-100 top-16" : "opacity-0 top-[-400px]"
           )}
         >

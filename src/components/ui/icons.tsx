@@ -1,11 +1,22 @@
 import React from "react"
-import { Menu, Moon, Sun, X } from "lucide-react"
+import {
+  ChevronsDown,
+  CircleDot,
+  MapPin,
+  Menu,
+  Moon,
+  Sun,
+  X,
+} from "lucide-react"
 
 const Icons = {
-  Menu: Menu,
-  Moon: Moon,
-  Sun: Sun,
-  X: X,
+  ChevronsDown,
+  CircleDot,
+  MapPin,
+  Menu,
+  Moon,
+  Sun,
+  X,
   GitHub: (props: React.SVGProps<SVGSVGElement>) => (
     <svg
       xmlns="http://www.w3.org/2000/svg"
