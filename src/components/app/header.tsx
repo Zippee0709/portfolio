@@ -1,6 +1,6 @@
 "use client"
 
-import React, { useState } from "react"
+import React, { useEffect, useRef, useState } from "react"
 import Link from "next/link"
 
 import { cn } from "@/lib/utils"
@@ -10,6 +10,25 @@ import { ThemeButton } from "@/components/app/theme-button"
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const buttonRef = useRef<HTMLButtonElement>(null)
+
+  useEffect(() => {
+    const handleClickOutside = (e: MouseEvent) => {
+      if (
+        buttonRef.current &&
+        e.target instanceof Node &&
+        !buttonRef.current.contains(e.target)
+      ) {
+        setIsMenuOpen(false)
+      }
+    }
+
+    document.addEventListener("mousedown", handleClickOutside)
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside)
+    }
+  }, [])
 
   return (
     <header>
@@ -19,6 +38,7 @@ const Header = () => {
             &lt;ZW /&gt;
           </Link>
           <Button
+            ref={buttonRef}
             className="lg:hidden"
             variant="ghost"
             size="icon"
@@ -76,7 +96,9 @@ const Header = () => {
           </li>
           <li className="w-full h-[1px] bg-gray-200 dark:bg-white lg:w-[1px] lg:h-6" />
           <li className="flex justify-between items-center">
-            <p className="text-sm lg:hidden">Changer le theme</p>
+            <p className="text-sm text-primary font-medium lg:hidden">
+              Changer le theme
+            </p>
             <ThemeButton />
           </li>
           <li>
