@@ -4,6 +4,7 @@ import { Inter } from "next/font/google"
 import "./globals.css"
 
 import { cn } from "@/lib/utils"
+import { Footer } from "@/components/app/footer"
 import { Header } from "@/components/app/header"
 import { ThemeProvider } from "@/components/app/theme-provider"
 
@@ -36,6 +37,7 @@ export default function RootLayout({
         >
           <Header />
           {children}
+          <Footer />
         </ThemeProvider>
       </body>
     </html>
