@@ -6,11 +6,11 @@ import { Icons } from "@/components/ui/icons"
 
 const Presentation = () => {
   return (
-    <section className="flex flex-col gap-8 items-center p-4">
-      <div className="flex justify-center items-center w-72 h-72 bg-gray-900 my-4">
-        <div className="relative w-11/12 h-80">
+    <section className="flex flex-col items-center gap-8 p-4">
+      <div className="my-4 flex h-72 w-72 items-center justify-center bg-gray-900">
+        <div className="relative h-80 w-11/12">
           <Image
-            className="bg-background p-2 -translate-y-8"
+            className="-translate-y-8 bg-background p-2"
             src="/images/pp.jpg"
             alt="photo-de-profil"
             fill
@@ -18,14 +18,14 @@ const Presentation = () => {
           />
         </div>
       </div>
-      <h1 className="text-2xl font-bold text-center">
-        Hello, je m'appelle Zhiwen 👋
+      <h1 className="text-center text-2xl font-bold">
+        Hello, je m&quot;appelle Zhiwen 👋
       </h1>
-      <p className="font-medium text-center">
-        En tant que développeur full-stack, je maîtrise l'ensemble du processus
-        de développement des applications web, que ce soit en front-end et/ou en
-        back-end, avec pour objectif de vous assister dans la réalisation de vos
-        projets.
+      <p className="text-center font-medium">
+        En tant que développeur full-stack, je maîtrise l&quot;ensemble du
+        processus de développement des applications web, que ce soit en
+        front-end et/ou en back-end, avec pour objectif de vous assister dans la
+        réalisation de vos projets.
       </p>
       <div className="flex gap-8">
         <div className="flex gap-2">

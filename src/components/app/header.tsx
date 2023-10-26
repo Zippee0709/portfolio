@@ -32,8 +32,8 @@ const Header = () => {
 
   return (
     <header>
-      <nav className="flex flex-col bg-background gap-4 h-16 px-4 py-2.5 md:px-10 lg:flex-row lg:items-center lg:justify-between">
-        <div className="flex min-h-full justify-between items-center">
+      <nav className="flex h-16 flex-col gap-4 bg-background px-4 py-2.5 md:px-10 lg:flex-row lg:items-center lg:justify-between">
+        <div className="flex min-h-full items-center justify-between">
           <Link href="/" className="text-xl font-semibold">
             &lt;ZW /&gt;
           </Link>
@@ -49,11 +49,11 @@ const Header = () => {
         </div>
         <ul
           className={cn(
-            "absolute z-10 w-full bg-background left-0 top-16 flex flex-col gap-4 text-sm px-4 pb-4 transition-all ease-in duration-300 md:px-10 lg:flex-row lg:static lg:opacity-100 lg:pb-0 lg:w-auto lg:items-center lg:gap-6 lg:px-0",
-            isMenuOpen ? "opacity-100 top-16" : "opacity-0 top-[-400px]"
+            "absolute left-0 top-16 z-10 flex w-full flex-col gap-4 bg-background px-4 pb-4 text-sm transition-all duration-300 ease-in md:px-10 lg:static lg:w-auto lg:flex-row lg:items-center lg:gap-6 lg:px-0 lg:pb-0 lg:opacity-100",
+            isMenuOpen ? "top-16 opacity-100" : "top-[-400px] opacity-0"
           )}
         >
-          <li className="w-full h-[1px] bg-gray-200 dark:bg-white lg:hidden" />
+          <li className="h-[1px] w-full bg-gray-200 dark:bg-white lg:hidden" />
           <li>
             <Link
               href="/"
@@ -94,9 +94,9 @@ const Header = () => {
               Contact
             </Link>
           </li>
-          <li className="w-full h-[1px] bg-gray-200 dark:bg-white lg:w-[1px] lg:h-6" />
-          <li className="flex justify-between items-center">
-            <p className="text-sm text-primary font-medium lg:hidden">
+          <li className="h-[1px] w-full bg-gray-200 dark:bg-white lg:h-6 lg:w-[1px]" />
+          <li className="flex items-center justify-between">
+            <p className="text-sm font-medium text-primary lg:hidden">
               Changer le theme
             </p>
             <ThemeButton />
