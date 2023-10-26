@@ -6,7 +6,7 @@ import { Card } from "@/components/app/cards/card"
 const AboutMe = () => {
   return (
     <section className="relative flex flex-col gap-8 items-center p-4 w-full h-full">
-      <div className="z-[-1] absolute w-screen h-full left-0 flex justify-center items-center mx-auto blur-[180px]">
+      <div className="z-[-1] absolute w-full h-full left-0 flex justify-center items-center mx-auto blur-[180px]">
         <div className="w-full h-full bg-gradient-colored"></div>
       </div>
       <p className="text-4xl font-medium">À propos de moi</p>
@@ -52,13 +52,13 @@ const AboutMe = () => {
             JavaScript, même si je peux m'adapter à d'autres langages.
           </p>
         </Card>
-        <Card className="items-start gap-2 p-6">
-          <p className="text-2xl">Un code propre et efficace.</p>
+        <Card className="items-start gap-2 pt-6 pl-6">
+          <p className="text-2xl pr-6">Un code propre et efficace.</p>
           <p className="text-sm text-gray-400 pr-6">
             Une attention particulière est portée sur la qualité et la
             lisibilité du code.
           </p>
-          <div className="relative w-full h-36 bg-gradient-card rounded-xl">
+          <div className="relative w-full h-36 bg-gradient-card rounded-tl-xl">
             <Image
               src="/images/code.png"
               alt="Screenshot showing HTML semntic code"
