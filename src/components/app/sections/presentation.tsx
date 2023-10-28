@@ -2,6 +2,7 @@ import React from "react"
 import Image from "next/image"
 import Link from "next/link"
 
+import { siteConfig } from "@/config/site"
 import { cn } from "@/lib/utils"
 import { buttonVariants } from "@/components/ui/button"
 import { Icons } from "@/components/ui/icons"
@@ -35,13 +36,13 @@ const Presentation = () => {
           </div>
           <div className="flex gap-2">
             <Link
-              href="/"
+              href={siteConfig.links.github}
               className={cn(buttonVariants({ variant: "ghost", size: "icon" }))}
             >
               <Icons.Github />
             </Link>
             <Link
-              href="/"
+              href={siteConfig.links.linkedin}
               className={cn(buttonVariants({ variant: "ghost", size: "icon" }))}
             >
               <Icons.Linkedin />

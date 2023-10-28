@@ -31,8 +31,8 @@ const Header = () => {
   }, [])
 
   return (
-    <header className="fixed left-1/2 z-10 w-full -translate-x-1/2 border-b bg-background">
-      <nav className="mx-auto flex h-16 max-w-screen-lg  flex-col gap-4 px-4 py-2.5 lg:flex-row lg:items-center lg:justify-between">
+    <header className="fixed left-1/2 z-10 w-full -translate-x-1/2 bg-background">
+      <nav className="mx-auto flex h-16 max-w-screen-lg border-b flex-col gap-4 px-4 py-2.5 lg:flex-row lg:items-center lg:justify-between">
         <div className="flex min-h-full items-center justify-between">
           <Link href="/" className="text-xl font-semibold">
             &lt;ZW /&gt;
