@@ -4,9 +4,9 @@ import { ProjectCard } from "@/components/app/cards/project-card"
 
 const Projects = () => {
   return (
-    <section className="flex flex-col items-center gap-8 p-4 py-10 w-full bg-background">
+    <section className="flex w-full flex-col items-center gap-8 bg-background p-4 py-10">
       <p className="text-3xl font-medium">Projets</p>
-      <div className="flex flex-col w-full gap-4">
+      <div className="flex w-full flex-col gap-4">
         <ProjectCard
           className="bg-gradient-to-b from-blue-900 to-indigo-900"
           path="/images/projects/maneo.png"

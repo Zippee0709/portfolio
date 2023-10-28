@@ -17,13 +17,13 @@ const ProjectCard = ({ className, path, alt }: ProjectCardProps) => {
     <AnimatePresence>
       <motion.div
         className={cn(
-          "flex justify-center items-end w-full h-60 rounded-xl",
+          "flex h-60 w-full items-end justify-center rounded-xl",
           className
         )}
       >
-        <div className="relative w-[90%] h-[90%] hover:w-full hover:h-full transition-all duration-300 ease-in">
+        <div className="relative h-[90%] w-[90%] transition-all duration-300 ease-in hover:h-full hover:w-full">
           <Image
-            className="rounded-t-xl hover:rounded-xl transition-all duration-300 ease-in"
+            className="rounded-t-xl transition-all duration-300 ease-in hover:rounded-xl"
             src={path}
             alt={alt}
             fill

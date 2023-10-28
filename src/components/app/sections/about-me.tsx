@@ -65,7 +65,7 @@ const AboutMe = () => {
             Une attention particulière est portée sur la qualité et la
             lisibilité du code.
           </p>
-          <div className="relative h-36 w-full rounded-tl-xl rounded-br-xl bg-gradient-to-b from-slate-900 to-slate-900">
+          <div className="relative h-36 w-full rounded-br-xl rounded-tl-xl bg-gradient-to-b from-slate-900 to-slate-900">
             <Image
               src="/images/code.png"
               alt="Screenshot showing HTML semntic code"
@@ -80,7 +80,7 @@ const AboutMe = () => {
             Avec une approche &quot;mobile-first&quot;, un standard de nos
             jours.
           </p>
-          <div className="relative h-60 w-full rounded-tl-xl rounded-br-xl bg-gradient-to-b from-slate-900 to-slate-900">
+          <div className="relative h-60 w-full rounded-br-xl rounded-tl-xl bg-gradient-to-b from-slate-900 to-slate-900">
             <Image
               className="rounded-br-xl"
               src="/images/responsive.webp"

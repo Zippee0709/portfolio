@@ -6,7 +6,7 @@ import { Icons } from "@/components/ui/icons"
 
 const Presentation = () => {
   return (
-    <section className="flex flex-col items-center gap-8 p-4 py-10 bg-background">
+    <section className="flex flex-col items-center gap-8 bg-background p-4 py-10">
       <div className="my-4 flex h-72 w-72 items-center justify-center bg-gray-900">
         <div className="relative h-80 w-11/12">
           <Image
