@@ -77,10 +77,6 @@
       ),
       #a84ddf;
   }
-
-  .bg-gradient-card {
-    background-image: linear-gradient(135deg,rgba(223,239,254,.22),rgba(223,239,254,.07))
-  }
 }
 
 @layer base {
