@@ -8,7 +8,7 @@ import { Icons } from "@/components/ui/icons"
 
 const Presentation = () => {
   return (
-    <section className="flex flex-col justify-center gap-8 p-4 py-10 w-full sm:min-h-[700px] sm:gap-16">
+    <section className="flex flex-col justify-center gap-8 p-4 py-16 w-full sm:gap-16 sm:mt-16">
       <div className="flex flex-col justify-between items-center gap-8 w-full sm:flex-row">
         <div className="my-4 flex h-72 w-72 items-center justify-center bg-gray-900 sm:order-1">
           <div className="relative h-80 w-11/12">

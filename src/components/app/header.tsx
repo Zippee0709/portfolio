@@ -32,7 +32,7 @@ const Header = () => {
 
   return (
     <header className="max-w-screen-lg mx-auto">
-      <nav className="flex h-16 flex-col gap-4 bg-background px-4 py-2.5 sm:px-0 lg:flex-row lg:items-center lg:justify-between">
+      <nav className="flex h-16 flex-col gap-4 bg-background px-4 py-2.5 lg:flex-row lg:items-center lg:justify-between">
         <div className="flex min-h-full items-center justify-between">
           <Link href="/" className="text-xl font-semibold">
             &lt;ZW /&gt;
