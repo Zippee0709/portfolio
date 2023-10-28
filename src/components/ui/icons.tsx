@@ -1,5 +1,6 @@
 import React from "react"
 import {
+  ArrowRight,
   ChevronsDown,
   CircleDot,
   MapPin,
@@ -10,6 +11,7 @@ import {
 } from "lucide-react"
 
 const Icons = {
+  ArrowRight,
   ChevronsDown,
   CircleDot,
   MapPin,

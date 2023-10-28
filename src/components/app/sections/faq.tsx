@@ -6,6 +6,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion"
+import { ContactCard } from "@/components/app/cards/contact-card"
 
 const FAQ = () => {
   return (
@@ -64,6 +65,8 @@ const FAQ = () => {
           </AccordionContent>
         </AccordionItem>
       </Accordion>
+
+      <ContactCard />
     </section>
   )
 }
