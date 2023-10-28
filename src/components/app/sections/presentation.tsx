@@ -1,45 +1,77 @@
 import React from "react"
 import Image from "next/image"
+import Link from "next/link"
 
-import { Button } from "@/components/ui/button"
+import { cn } from "@/lib/utils"
+import { buttonVariants } from "@/components/ui/button"
 import { Icons } from "@/components/ui/icons"
 
 const Presentation = () => {
   return (
-    <section className="flex flex-col items-center gap-8 bg-background p-4 py-10">
-      <div className="my-4 flex h-72 w-72 items-center justify-center bg-gray-900">
-        <div className="relative h-80 w-11/12">
-          <Image
-            className="-translate-y-8 bg-background p-2"
-            src="/images/pp.jpg"
-            alt="photo-de-profil"
-            fill
-            style={{ objectFit: "cover", objectPosition: "top" }}
-          />
+    <section className="flex flex-col justify-center gap-8 p-4 py-10 w-full sm:min-h-[700px] sm:gap-16">
+      <div className="flex flex-col justify-between items-center gap-8 w-full sm:flex-row">
+        <div className="my-4 flex h-72 w-72 items-center justify-center bg-gray-900 sm:order-1">
+          <div className="relative h-80 w-11/12">
+            <Image
+              className="-translate-y-8 bg-background p-2"
+              src="/images/pp.jpg"
+              alt="photo-de-profil"
+              fill
+              style={{ objectFit: "cover", objectPosition: "top" }}
+            />
+          </div>
+        </div>
+        <div className="flex flex-col items-center gap-8 max-w-lg sm:items-start">
+          <h1 className="text-4xl font-extrabold text-center max-w-[240px] sm:max-w-none">
+            Développeur Full-Stack 👋
+          </h1>
+          <p className="text-center font-medium sm:text-left">
+            Je m'appelle Zhiwen Wang, un développeur passionné par le
+            développement web basé à Paris, en France. 📍
+          </p>
+          <div className="flex gap-2">
+            <Icons.CircleDot className="h-6 w-6" color="green" />
+            <p className="text-medium">Disponible</p>
+          </div>
+          <div className="flex gap-2">
+            <Link
+              href="/"
+              className={cn(buttonVariants({ variant: "ghost", size: "icon" }))}
+            >
+              <Icons.Github />
+            </Link>
+            <Link
+              href="/"
+              className={cn(buttonVariants({ variant: "ghost", size: "icon" }))}
+            >
+              <Icons.Linkedin />
+            </Link>
+          </div>
         </div>
       </div>
-      <h1 className="text-center text-2xl font-bold">
-        Hello, je m&quot;appelle Zhiwen 👋
-      </h1>
-      <p className="text-center font-medium">
-        En tant que développeur full-stack, je maîtrise l&quot;ensemble du
-        processus de développement des applications web, que ce soit en
-        front-end et/ou en back-end, avec pour objectif de vous assister dans la
-        réalisation de vos projets.
-      </p>
-      <div className="flex gap-8">
-        <div className="flex gap-2">
-          <Icons.MapPin className="h-6 w-6" />
-          <p className="text-medium">Île-de-France</p>
-        </div>
-        <div className="flex gap-2">
-          <Icons.CircleDot className="h-6 w-6" color="green" />
-          <p className="text-medium">Disponible</p>
+      <div className="flex flex-col items-center gap-12 sm:flex-row">
+        <b className="text-xl border-b-2 dark:border-white pb-1 sm:border-b-0 sm:border-r-2 sm:pb-0 sm:pr-12">
+          Tech Stack
+        </b>
+        <div className="grid grid-cols-2 gap-12 sm:grid-cols-4">
+          <div className="flex gap-4">
+            <Icons.ReactJS />
+            <Icons.NextJS />
+          </div>
+          <div className="flex gap-4">
+            <Icons.NodeJS />
+            <Icons.NestJS />
+          </div>
+          <div className="flex gap-4">
+            <Icons.TailwindCSS />
+            <Icons.Sass />
+          </div>
+          <div className="flex gap-4">
+            <Icons.JavaScript />
+            <Icons.TypeScript />
+          </div>
         </div>
       </div>
-      <Button variant="ghost" size="icon">
-        <Icons.ChevronsDown className="h-6 w-6" />
-      </Button>
     </section>
   )
 }

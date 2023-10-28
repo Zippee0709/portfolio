@@ -9,7 +9,7 @@ const AboutMe = () => {
       <div className="absolute left-0 z-[-1] mx-auto flex h-full w-full items-center justify-center blur-[180px]">
         <div className="bg-gradient-colored h-full w-full"></div>
       </div>
-      <p className="text-3xl font-medium">À propos de moi</p>
+      <h2 className="text-4xl font-extrabold text-center">À propos</h2>
       <div className="grid grid-cols-1 grid-rows-1 gap-4">
         <div className="grid h-full w-full grid-cols-2 grid-rows-2 gap-4">
           <Card>
