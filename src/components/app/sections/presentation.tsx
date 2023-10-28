@@ -8,8 +8,8 @@ import { Icons } from "@/components/ui/icons"
 
 const Presentation = () => {
   return (
-    <section className="flex flex-col justify-center gap-8 p-4 py-16 w-full sm:gap-16 sm:mt-16">
-      <div className="flex flex-col justify-between items-center gap-8 w-full sm:flex-row">
+    <section className="mt-20 flex w-full flex-col justify-center gap-8 p-4 py-16 sm:gap-16 sm:pt-32">
+      <div className="flex w-full flex-col items-center justify-between gap-8 sm:flex-row">
         <div className="my-4 flex h-72 w-72 items-center justify-center bg-gray-900 sm:order-1">
           <div className="relative h-80 w-11/12">
             <Image
@@ -21,12 +21,12 @@ const Presentation = () => {
             />
           </div>
         </div>
-        <div className="flex flex-col items-center gap-8 max-w-lg sm:items-start">
-          <h1 className="text-4xl font-extrabold text-center max-w-[240px] sm:max-w-none">
+        <div className="flex max-w-lg flex-col items-center gap-8 sm:items-start">
+          <h1 className="max-w-[240px] text-center text-4xl font-extrabold sm:max-w-none sm:text-left sm:text-6xl">
             Développeur Full-Stack 👋
           </h1>
           <p className="text-center font-medium sm:text-left">
-            Je m'appelle Zhiwen Wang, un développeur passionné par le
+            Je m&apos;appelle Zhiwen Wang, un développeur passionné par le
             développement web basé à Paris, en France. 📍
           </p>
           <div className="flex gap-2">
@@ -50,7 +50,7 @@ const Presentation = () => {
         </div>
       </div>
       <div className="flex flex-col items-center gap-12 sm:flex-row">
-        <b className="text-xl border-b-2 dark:border-white pb-1 sm:border-b-0 sm:border-r-2 sm:pb-0 sm:pr-12">
+        <b className="border-b-2 pb-1 text-xl dark:border-white sm:border-b-0 sm:border-r-2 sm:pb-0 sm:pr-12">
           Tech Stack
         </b>
         <div className="grid grid-cols-2 gap-12 sm:grid-cols-4">

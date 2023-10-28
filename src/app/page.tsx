@@ -7,7 +7,7 @@ import { Projects } from "@/components/app/sections/projects"
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center justify-center max-w-screen-lg mx-auto">
+    <main className="mx-auto flex max-w-screen-lg flex-col items-center justify-center">
       <Presentation />
       <AboutMe />
       <Projects />

@@ -21,12 +21,13 @@ const ProjectCard = ({ className, path, alt }: ProjectCardProps) => {
           className
         )}
       >
-        <div className="relative h-[90%] w-[90%] transition-all duration-300 ease-in hover:h-full hover:w-full">
+        <div className="relative h-[90%] w-[90%] transition-all duration-100 ease-in hover:h-full hover:w-full">
           <Image
-            className="rounded-t-xl transition-all duration-300 ease-in hover:rounded-xl"
+            className="rounded-t-xl transition-all duration-100 ease-in hover:rounded-xl"
             src={path}
             alt={alt}
             fill
+            priority
           />
         </div>
       </motion.div>

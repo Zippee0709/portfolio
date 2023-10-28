@@ -10,58 +10,72 @@ import { ContactCard } from "@/components/app/cards/contact-card"
 
 const FAQ = () => {
   return (
-    <section className="flex h-full w-full flex-col items-center gap-8 p-4">
-      <p className="text-center text-3xl font-medium">Questions fréquentes</p>
+    <section className="flex h-full w-full flex-col items-center gap-16 p-4 py-16 sm:gap-32">
+      <h2 className="text-center text-4xl font-semibold sm:text-5xl">
+        Questions fréquentes
+      </h2>
 
       <Accordion className="w-full" type="single" collapsible>
         <AccordionItem value="item-1">
           <AccordionTrigger>
-            Quel type de contrat recherches-tu ?
+            <p className="text-base sm:text-xl">
+              Quel type de contrat recherches-tu ?
+            </p>
           </AccordionTrigger>
           <AccordionContent>
-            En freelance je n&quot;accepte que les missions avec une durée
+            En freelance je n&apos;accepte que les missions avec une durée
             supérieure à 3 mois.
             <br />
             <br />
-            Je suis également ouvert pour un poste en CDI, n&quot;hésitez pas à
+            Je suis également ouvert pour un poste en CDI, n&apos;hésitez pas à
             me contacter pour en discuter.
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="item-2">
           <AccordionTrigger>
-            Sur quel stack technique travailles-tu ?
+            <p className="text-base sm:text-xl">
+              Sur quel stack technique travailles-tu ?
+            </p>
           </AccordionTrigger>
           <AccordionContent>
-            Mes frameworks de prédilections sont : React.js, Next.js,
-            TypeScript, Node.js, Nest.js, MongoDB, PostgreSQL, Tailwind CSS,
-            Sass.
+            Mon langage de prédilection est le JavaScript, couplé avec
+            TypeScript.
             <br />
             <br />
-            Je suis ouvert à d&quot;autres technologies, n&quot;hésitez pas à me
-            faire part de votre stack technique.
+            Front-End : React.js / Next.js / TailwindCSS / Sass
+            <br />
+            Back-End : Node.js / Nest.js
+            <br />
+            BDD : Prisma, PostgreSQL, MongoDB, Firebase
+            <br />
+            Testing : Jest / Chai / Mocha
+            <br />
+            DevOps : AWS / GCP
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="item-3">
           <AccordionTrigger>
-            Avec quel type d&quot;entreprise travailles-tu ?
+            <p className="text-start text-base sm:text-xl">
+              Peux-tu utiliser d&apos;autres langages ou frameworks ?
+            </p>
           </AccordionTrigger>
           <AccordionContent>
-            Je collabore avec des entreprises de toutes envergures, qu&quot;il
-            s&quot;agisse de startups en phase de croissance ou de grandes
-            entreprises.
+            Bien sûr ! Je ne me limite pas au contraire je pense que c&apos;est
+            une super façon d&apos;évoluer. Grâce à mon parcours j&apos;ai
+            utilisé de divers langages pour mes projets, je peux m&apos;adapter
+            rapidement à votre environnement de travail.
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="item-4">
           <AccordionTrigger>
-            Quelle est ta prétention salariale ?
+            <p className="text-base sm:text-xl">
+              Avec quel type d&apos;entreprise travailles-tu ?
+            </p>
           </AccordionTrigger>
           <AccordionContent>
-            Pour une mission en freelance, mon taux journalier moyen (TJM) est
-            de 400€.
-            <br />
-            <br />
-            Pour un poste en CDI, ma prétention salariale est de 45.000€ brut
-            par an.
+            Je collabore avec des entreprises de toutes envergures, qu&apos;il
+            s&apos;agisse de startups en phase de croissance ou de grandes
+            entreprises.
           </AccordionContent>
         </AccordionItem>
       </Accordion>

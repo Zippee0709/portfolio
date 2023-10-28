@@ -31,8 +31,8 @@ const Header = () => {
   }, [])
 
   return (
-    <header className="max-w-screen-lg mx-auto">
-      <nav className="flex h-16 flex-col gap-4 bg-background px-4 py-2.5 lg:flex-row lg:items-center lg:justify-between">
+    <header className="fixed left-1/2 z-10 w-full -translate-x-1/2 border-b bg-background">
+      <nav className="mx-auto flex h-16 max-w-screen-lg  flex-col gap-4 px-4 py-2.5 lg:flex-row lg:items-center lg:justify-between">
         <div className="flex min-h-full items-center justify-between">
           <Link href="/" className="text-xl font-semibold">
             &lt;ZW /&gt;
@@ -71,7 +71,7 @@ const Header = () => {
                 buttonVariants({ variant: "link", className: "p-0" })
               )}
             >
-              A propos
+              À propos
             </Link>
           </li>
           <li>
@@ -81,7 +81,7 @@ const Header = () => {
                 buttonVariants({ variant: "link", className: "p-0" })
               )}
             >
-              Experiences
+              Projets
             </Link>
           </li>
           <li>
