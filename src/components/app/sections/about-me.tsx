@@ -5,7 +5,7 @@ import { Card } from "@/components/app/cards/card"
 
 const AboutMe = () => {
   return (
-    <section className="relative flex h-full w-full flex-col items-center gap-8 p-4">
+    <section className="relative flex h-full w-full flex-col items-center gap-8 p-4 py-10">
       <div className="absolute left-0 z-[-1] mx-auto flex h-full w-full items-center justify-center blur-[180px]">
         <div className="bg-gradient-colored h-full w-full"></div>
       </div>
@@ -44,8 +44,9 @@ const AboutMe = () => {
         <Card className="items-start gap-2 p-6">
           <p className="text-2xl">Coder avec passion.</p>
           <p className="text-sm text-gray-400">
-            Passionné par le code depuis mon admission en école d&apos;ingénieurs, je
-            ne cesse de me perfectionner à travers de divers projets.
+            Passionné par le code depuis mon admission en école
+            d&apos;ingénieurs, je ne cesse de me perfectionner à travers de
+            divers projets.
             <br />
             <br />
             Spécialisé dans le développement web, je préfère travailler avec
@@ -70,10 +71,12 @@ const AboutMe = () => {
         <Card className="items-start gap-2 pl-6 pt-6">
           <p className="pr-6 text-2xl">Développement responsive.</p>
           <p className="pr-6 text-sm text-gray-400">
-            Avec une approche &quot;mobile-first&quot;, un standard de nos jours.
+            Avec une approche &quot;mobile-first&quot;, un standard de nos
+            jours.
           </p>
           <div className="relative h-60 w-full rounded-xl">
             <Image
+              className="rounded-xl"
               src="/images/responsive.webp"
               alt="Screenshot showing the responsiveness of an website"
               fill

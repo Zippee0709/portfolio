@@ -10,7 +10,7 @@ export default function Home() {
     <main className="flex flex-col items-center justify-center py-10">
       <Presentation />
       <AboutMe />
-      {/* <Projects /> */}
+      <Projects />
       <FAQ />
     </main>
   )
